@@ -126,7 +126,7 @@ public enum DimmingStyle {
     case tint(CGFloat)
 }
 
-internal extension DimmingStyle {
+public extension DimmingStyle {
     init(adapter: DimmingStyleAdapter, ratio: CGFloat) {
         switch adapter {
         case .alpha: self = .alpha(ratio)
